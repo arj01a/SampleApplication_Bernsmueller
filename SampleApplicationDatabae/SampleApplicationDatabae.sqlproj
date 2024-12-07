@@ -132,4 +132,7 @@
     <Build Include="dbo\Tables\Relation.sql" />
     <Build Include="Security\ddl.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="SampleApplication.mdf" />
+  </ItemGroup>
 </Project>

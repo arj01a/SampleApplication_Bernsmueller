@@ -14,9 +14,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApplication.Infrastructure", "SampleApplication.Infrastructure\SampleApplication.Infrastructure.csproj", "{E28D4A15-BF2E-4DAC-911A-F7BBB5A64422}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{976BF623-D2A9-41DF-8DA2-0443B0BC80B2}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances\MSSQLLocalDB\SampleApplication.mdf = ..\..\..\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances\MSSQLLocalDB\SampleApplication.mdf
-	EndProjectSection
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SampleApplicationDatabae", "SampleApplicationDatabae\SampleApplicationDatabae.sqlproj", "{8B938E57-8A4C-4D4A-A671-68DCE2755464}"
 EndProject
