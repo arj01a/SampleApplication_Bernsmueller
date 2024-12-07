@@ -133,6 +133,6 @@
     <Build Include="Security\ddl.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="SampleApplication.mdf" />
+    <PostDeploy Include="Script.PostDeployment1.sql" />
   </ItemGroup>
 </Project>
