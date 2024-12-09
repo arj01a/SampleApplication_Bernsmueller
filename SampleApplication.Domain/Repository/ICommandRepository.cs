@@ -2,7 +2,7 @@
 
 namespace SampleApplication.Domain.Repository
 {
-    public interface ICommandRepositor<T> where T : IAggregateRoot
+    public interface ICommandRepository<T> where T : IAggregateRoot
     {
         IUnitOfWork UnitOfWork { get; }
     }
