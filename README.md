@@ -1,6 +1,14 @@
 # Sample Application
 The sample application has been built with Angular and .Net using DDD, Clean Architecture and CRQS
 
+## Prerequisites
+
+Windows Machine
+
+Visual Studio 2022 
+
+Node JS version 18.xx as a minimum
+
 ## Set-up
 Publish SampleApplicationDatabase 
 
