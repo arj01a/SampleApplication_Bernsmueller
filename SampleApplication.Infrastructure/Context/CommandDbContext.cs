@@ -5,9 +5,14 @@ using System.Reflection;
 
 namespace SampleApplication.Infrastructure.Context
 {
-    public class QueryDbContext(DbContextOptions<QueryDbContext> options) : DbContext(options), IQueryDbContext
+    public class CommandDbContext(DbContextOptions<CommandDbContext> options) : DbContext(options), ICommandDbContext
     {
-        public IQueryable<Account> Accounts => Set<Account>().AsNoTracking();
+        public DbSet<Account> Accounts { get; set; }
+
+        public async Task<int> SaveEntitiesAysnc(CancellationToken cancellationToken = default)
+        {
+            return await base.SaveChangesAsync(cancellationToken);
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

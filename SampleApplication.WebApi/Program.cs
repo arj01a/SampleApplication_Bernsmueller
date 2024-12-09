@@ -21,6 +21,7 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.G
 builder.Services.AddAutoMapper(Assembly.GetAssembly(typeof(MappingProfile)));
 
 builder.Services.AddTransient<IQueryDbContext, QueryDbContext>();
+builder.Services.AddTransient<ICommandDbContext, CommandDbContext>();
 builder.Services.AddTransient<IAccountQueryRepository, AccountQueryRepository>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
