@@ -25,4 +25,4 @@ Relations - Connection between Account and Person
 
 ## Tasks
 1. An example of retrieving the list of accounts has been implemented. Please implement a page displaying a list of Persons.
-2. Create a Person detail page where a persons name can be updated, use a command handler implementation for back end.
+2. Create a Person detail page where a persons first name / last name can be updated, use a command handler implementation for back end.
