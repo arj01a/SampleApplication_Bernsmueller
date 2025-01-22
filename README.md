@@ -12,11 +12,11 @@ Node JS version 18.xx as a minimum
 ## Set-up
 Publish SampleApplicationDatabase 
 
-![image](https://github.com/user-attachments/assets/9b6aa554-12ad-4188-8433-a234351a7e72)
+![396516488-d96c133f-2927-439e-8c17-d59250edefbc](https://github.com/user-attachments/assets/d2af841e-d4f4-432c-bdf3-46edb14237c6)
 
 Configure mutliple start-up projects
 
-![image](https://github.com/user-attachments/assets/d6fbad93-2be1-43e7-9b52-235dacdb5ab4)
+![396516531-a36f2e09-32a8-4445-9983-61a4d2608149](https://github.com/user-attachments/assets/5371ad36-99f6-4888-9a45-64b94d999e88)
 
 ## Domain
 Account - List of Accounts
