@@ -5,7 +5,7 @@ The sample application has been built with Angular and .Net using DDD, Clean Arc
 
 Windows Machine
 
-Visual Studio 2022 
+Visual Studio 2022
 
 Node JS version 18.xx as a minimum
 
