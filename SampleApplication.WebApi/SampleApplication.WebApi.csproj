@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -7,6 +7,7 @@
     <SpaRoot>..\sampleapplication.client</SpaRoot>
     <SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
     <SpaProxyServerUrl>https://localhost:63280</SpaProxyServerUrl>
+    <UserSecretsId>15ae58a4-c65d-4b9d-aaeb-ecdc284d54c4</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

@@ -8,8 +8,9 @@ namespace SampleApplication.Infrastructure.Context
     public class CommandDbContext(DbContextOptions<CommandDbContext> options) : DbContext(options), ICommandDbContext
     {
         public DbSet<Account> Accounts { get; set; }
+        public DbSet<Person> Persons { get; set; }
 
-        public async Task<int> SaveEntitiesAysnc(CancellationToken cancellationToken = default)
+        public async Task<int> SaveEntitiesAsync(CancellationToken cancellationToken = default)
         {
             return await base.SaveChangesAsync(cancellationToken);
         }

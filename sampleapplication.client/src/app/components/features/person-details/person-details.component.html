@@ -1,0 +1,31 @@
+<h1>Edit Person</h1>
+
+<div *ngIf="person">
+  <form>
+    <div>
+      <label for="firstName">First Name:</label>
+      <input
+        type="text"
+        id="firstName"
+        [(ngModel)]="person.firstName"
+        name="firstName"
+      />
+    </div>
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input
+        type="text"
+        id="lastName"
+        [(ngModel)]="person.lastName"
+        name="lastName"
+      />
+    </div>
+    <button type="button" (click)="save()">Save</button>
+  </form>
+</div>
+
+<div *ngIf="!person">
+  <p>Loading person...</p>
+</div>
+
+<a routerLink="/persons">Back to Persons</a>

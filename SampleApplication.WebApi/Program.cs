@@ -14,7 +14,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<QueryDbContext>(options => options.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SampleApplication;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"));
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<QueryDbContext>(options => options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<CommandDbContext>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetAssembly(typeof(MediatorLibrary))));
 
@@ -23,6 +26,8 @@ builder.Services.AddAutoMapper(Assembly.GetAssembly(typeof(MappingProfile)));
 builder.Services.AddTransient<IQueryDbContext, QueryDbContext>();
 builder.Services.AddTransient<ICommandDbContext, CommandDbContext>();
 builder.Services.AddTransient<IAccountQueryRepository, AccountQueryRepository>();
+builder.Services.AddTransient<IPersonQueryRepository, PersonQueryRepository>();
+builder.Services.AddTransient<IPersonCommandRepository, PersonCommandRepository>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

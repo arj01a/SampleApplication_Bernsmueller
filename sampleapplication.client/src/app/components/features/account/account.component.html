@@ -5,16 +5,18 @@
 <p *ngIf="accounts.length == 0"><em>Loading Accounts...</em></p>
 
 <table *ngIf="accounts.length > 0">
-    <thead>
-        <tr>
-            <th>Number</th>
-            <th>Name</th>           
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let account of accounts">
-            <td>{{ account.number }}</td>
-            <td>{{ account.name }}</td>           
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let account of accounts">
+      <td>{{ account.number }}</td>
+      <td>{{ account.name }}</td>
+    </tr>
+  </tbody>
 </table>
+
+<a routerLink="/persons">View Persons</a>

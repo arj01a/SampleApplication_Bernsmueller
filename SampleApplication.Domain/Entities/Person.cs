@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace SampleApplication.Domain.Entities
 {
-    public class Person
+    // IEntity constraint in IQueryRepository;
+    // IAggregateRoot constraint in command repo interface
+    public class Person(
+        int personId,
+        string firstName,
+        string lastName
+        ) : IEntity, IAggregateRoot
     {
-        public int PersonId { get; private protected set; }
-        public string FirstName { get; private protected set; }
-        public string LastName { get; private protected set; }
+        public int PersonId { get; private protected set; } = personId;
+        public string FirstName { get; private protected set; } = firstName;
+        public string LastName { get; private protected set; } = lastName;
     }
 }

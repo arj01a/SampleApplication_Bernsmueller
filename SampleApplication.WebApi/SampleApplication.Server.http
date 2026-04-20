@@ -1,6 +1,11 @@
-@SampleApplication.Server_HostAddress = http://localhost:5168
+#@SampleApplication.Server_HostAddress = http://localhost:5168
+@SampleApplication_Server_HostAddress = https://localhost:7131
 
-GET {{SampleApplication.Server_HostAddress}}/account/
+GET {{SampleApplication_Server_HostAddress}}/account/
+Accept: application/json
+
+###
+GET {{SampleApplication_Server_HostAddress}}/Person/
 Accept: application/json
 
 ###

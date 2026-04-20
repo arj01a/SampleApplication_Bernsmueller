@@ -9,6 +9,8 @@ namespace SampleApplication.Infrastructure.Context
     {
         public IQueryable<Account> Accounts => Set<Account>().AsNoTracking();
 
+        public IQueryable<Person> Persons => Set<Person>().AsNoTracking();
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
