@@ -1,9 +1,9 @@
 using MediatR;
-using SampleApplication.Domain.Entities;
+using SampleApplication.BusinessLayer.Dto;
 
 namespace SampleApplication.BusinessLayer.Queries
 {
-    public class PersonByIdQuery(int personId) : IRequest<Person?>
+    public class PersonByIdQuery(int personId) : IRequest<PersonSummaryDto?>
     {
         public int PersonId { get; } = personId;
     }
